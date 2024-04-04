@@ -63,6 +63,8 @@ The application that allows users to upload PDF files or a company name. The bac
 
 ## Installation
 
+- You will need API keys for PineCone and OpenAI
+
 ### Backend
 
 1. Change directory to the "/backend"
