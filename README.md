@@ -113,4 +113,7 @@ npm run dev
  - Improve UI/UX.
  - Smart report generation from input data.
 
+## Demo video:
+- https://youtu.be/jSLtZxoT5BY
+
 **Developed by:**  Ashish Kumar Jha
