@@ -22,8 +22,9 @@ from langchain_community.utilities import WikipediaAPIWrapper
 load_dotenv()
 
 app = Flask(__name__)
+stringKey = 'mysql+mysqlconnector://avnadmin:AVNS_ziaPY9Lfd1awbRkjjJA@pdf-chat-pdf-chat.a.aivencloud.com:24598/pdfchat'
 CORS(app) 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SQLALCHEMY_DATABASE_URI")
+app.config['SQLALCHEMY_DATABASE_URI'] = stringKey
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
