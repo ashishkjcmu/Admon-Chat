@@ -23,7 +23,7 @@ load_dotenv()
 
 app = Flask(__name__)
 CORS(app) 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://avnadmin:AVNS_ziaPY9Lfd1awbRkjjJA@pdf-chat-pdf-chat.a.aivencloud.com:24598/pdfchat'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
